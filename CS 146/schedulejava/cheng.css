@@ -1,0 +1,77 @@
+/*
+Jerry Cheng
+
+I pledge my honor that I have abided by the Stevens Honor System
+
+*/
+
+.box {
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    border: 5px solid black;
+    padding: 5px;
+    margin: auto;
+}
+
+.timeday {
+    background-color: grey;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    width: 65x;
+}
+
+.toprow {
+    text-align: center;
+    font-size: 25px;
+    background-color: grey;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+}
+
+.emptytime {
+    background-color: white;
+    opacity:0
+}
+
+.cal103 {
+    background-color: goldenrod;
+    opacity:0
+}
+
+.cs115 {
+    background-color: deepskyblue;
+    opacity:0
+}
+
+.cs146 {
+    background-color: forestgreen;
+    opacity:0
+}
+
+.quiz {
+    background-color: orangered;
+    opacity:0
+}
+
+.ma121 {
+    background-color: crimson;
+    opacity:0
+}
+
+.pep111 {
+    background-color: mediumvioletred;
+    opacity:0
+}

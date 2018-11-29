@@ -1,297 +1,190 @@
 <!DOCTYPE html>
-<!-- I pledge my honor that I have abided by the Stevens Honor System.-->
+<!-- I pledge my honor that I have abided by the Stevens Honor System. -->
+<!-- Jerry Cheng -->
 <html>
 
+<!--Top Stuff######################################################################-->
 <head>
     <meta charset="utf-8" />
+    <link href="cheng.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="cheng.js"></script>
 </head>
-<style>
-    table,
-    th,
-    td {
-        border: 0.5px solid black;
-    }
-</style>
+<title> Homework 3 - Javascript Exercise </title>
 
 <body>
     <h1>
         Jerry Cheng's Schedule
     </h1>
 
-    <li><u>CAL103</u> Writing & Communications Collqm</li>
-    <li><u>CS115</u> Intro to Computer Science</li>
-    <li><u>CS146</u> Intro to Web Prgming & Web Dev</li>
-    <li><u>D110</u> Freshman Quiz</li>
-    <li><u>MA121</u> Differential Calculus</li>
-    <li><u>PEP111</u> Mechanics</li>
+    <h2>
+        Select Courses:
+    </h2>
+    <p>
+        Tick a checkbox to make that course appear! Change the color to change the course color!
+    </p>
+
+    <input type ="color" id="cal103color" title="cal103" value="#daa520" onchange="colorChange('cal103')">
+    <input type="checkbox" id="cal103check" onclick="myFunction('cal103')"><u>CAL103</u> Writing & Communications Collqm
+    
+    <br><input type ="color" id="cs115color" title="cs115" value="#00bfff" onchange="colorChange('cs115')">
+    <input type="checkbox" id="cs115check" onclick="myFunction('cs115')"><u>CS115</u> Intro to Computer Science
+    
+    <br><input type ="color" id="cs146color" title="cs146" value="#228b22" onchange="colorChange('cs146')">
+    <input type="checkbox" id="cs146check" onclick="myFunction('cs146')"><u>CS146</u> Intro to Web Prgming & Web Dev
+    
+    <br><input type ="color" id="quizcolor" title="quiz" value="#ff4500" onchange="colorChange('quiz')">
+    <input type="checkbox" id="quizcheck" onclick="myFunction('quiz')"><u>D110</u> Freshman Quiz
+    
+    <br><input type ="color" id="ma121color" title="ma121" value="#dc143c" onchange="colorChange('ma121')">
+    <input type="checkbox" id="ma121check" onclick="myFunction('ma121')"><u>MA122</u> Integral Calculus
+    
+    <br><input type ="color" id="pep111color" title="pep111" value="#c71585" onchange="colorChange('pep111')">
+    <input type="checkbox" id="pep111check" onclick="myFunction('pep111')"><u>PEP111</u> Mechanics
+    
+    <br><input type ="color" id="emptytimecolor" title="emptytime" value="#ffffff" onchange="colorChange('emptytime')">
+    <input type="checkbox" id="emptytimecheck" onclick="myFunction('emptytime')">Empty Boxes
     <p></p>
-    <table style="width:100%">
-        <thead>
-            <tr>
-                <th><strong>Time</strong></th>
-                <th><strong>Monday</strong></th>
-                <th><strong>Tuesday</strong></th>
-                <th><strong>Wednesday</strong></th>
-                <th><strong>Thursday</strong></th>
-                <th><strong>Friday</strong></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td align="right">8:00 AM</td>
-                <td></td>
-                <td rowspan="8">PEP111 X 218A</td>
-                <td></td>
-                <td rowspan="7">CS115 X 119</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">8:15 AM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">8:30 AM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">8:45 AM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">9:00 AM</td>
-                <td rowspan="4">PEP111 K 228</td>
-                <td></td>
-                <td rowspan="4">PEP111 K 228</td>
-            </tr>
-            <tr>
-                <td align="right">9:15 AM</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">9:30 AM</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">9:45 AM</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">10:00 AM</td>
-                <td rowspan="4">MA121 X 218B</td>
-                <td></td>
-                <td rowspan="4">MA121 X 218B</td>
-                <td></td>
-                <td rowspan="4">MA121 X 218B</td>
-            </tr>
-            <tr>
-                <td align="right">10:15 AM</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">10:30 AM</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">10:45 AM</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">11:00 AM</td>
-                <td rowspan="4">CS115 NB 105</td>
-                <td rowspan="4">MA121 B 430</td>
-                <td rowspan="4">CS115 NB 105</td>
-                <td rowspan="4">MA121 B 430</td>
-                <td rowspan="4">CS115 NB 105</td>
-            </tr>
-            <tr>
-                <td align="right">11:15 AM</td>
-            </tr>
-            <tr>
-                <td align="right">11:30 AM</td>
-            </tr>
-            <tr>
-                <td align="right">11:45 AM</td>
-            </tr>
-            <tr>
-                <td align="right">12:00 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">12:15 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">12:30 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">12:45 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">1:00 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">1:15 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">1:30 PM</td>
-                <td></td>
-                <td rowspan="6">CAL103 X 106</td>
-                <td></td>
-                <td rowspan="6">CAL 103 X 106</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">1:45 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">2:00 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">2:15 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">2:30 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">2:45 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">3:00 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">3:15 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">3:30 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">3:45 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">4:00 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">4:15 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">4:30 PM</td>
-                <td></td>
-                <td rowspan="5">CS146 P 120</td>
-                <td></td>
-                <td rowspan="5">CS146 P 120</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">4:45 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">5:00 PM</td>
-                <td rowspan="4">D110</td>
-                <td rowspan="4">D110</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">5:15 PM</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">5:30 PM</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td align="right">5:45 PM</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+
+
 </body>
+<!--Top Stuff######################################################################-->
+
+<!--Table-->
+<div class="container">
+    <div class="box timeday">Days</div>
+    <div class="box timeday">8:00</div>
+    <div class="box timeday">8:30</div>
+    <div class="box timeday">9:00</div>
+    <div class="box timeday">9:30</div>
+    <div class="box timeday">10:00</div>
+    <div class="box timeday">10:30</div>
+    <div class="box timeday">11:00</div>
+    <div class="box timeday">11:30</div>
+    <div class="box timeday">12:00</div>
+    <div class="box timeday">12:30</div>
+    <div class="box timeday">1:00</div>
+    <div class="box timeday">1:30</div>
+    <div class="box timeday">2:00</div>
+    <div class="box timeday">2:30</div>
+    <div class="box timeday">3:00</div>
+    <div class="box timeday">3:30</div>
+    <div class="box timeday">4:00</div>
+    <div class="box timeday">4:30</div>
+    <div class="box timeday">5:00</div>
+    <div class="box timeday">5:30</div>
+
+    <div class="box timeday">Mon</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box pep111">PEP111</div>
+    <div class="box pep111">PEP111</div>
+    <div class="box ma121">MA122</div>
+    <div class="box ma121">MA122</div>
+    <div class="box cs115">CS115</div>
+    <div class="box cs115">CS115</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box quiz">D110</div>
+    <div class="box quiz">D110</div>
+
+    <div class="box timeday">Tue</div>
+    <div class="box pep111">PEP111</div>
+    <div class="box pep111">PEP111</div>
+    <div class="box pep111">PEP111</div>
+    <div class="box pep111">PEP111</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box ma121">MA122</div>
+    <div class="box ma121">MA122</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box cal103">CAL103</div>
+    <div class="box cal103">CAL103</div>
+    <div class="box cal103">CAL103</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box cs146">CS146</div>
+    <div class="box cs146">CS146</div>
+    <div class="box cs146">CS146</div>
+
+    <div class="box timeday">Wed</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box ma121">MA122</div>
+    <div class="box ma121">MA122</div>
+    <div class="box cs115">CS115</div>
+    <div class="box cs115">CS115</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box quiz">D110</div>
+    <div class="box quiz">D110</div>
+    
+    <div class="box timeday">Thur</div>
+    <div class="box cs115">CS115</div>
+    <div class="box cs115">CS115</div>
+    <div class="box cs115">CS115</div>
+    <div class="box cs115">CS115</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box ma121">MA122</div>
+    <div class="box ma121">MA122</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box cal103">CAL103</div>
+    <div class="box cal103">CAL103</div>
+    <div class="box cal103">CAL103</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box cs146">CS146</div>
+    <div class="box cs146">CS146</div>
+    <div class="box cs146">CS146</div>
+
+    <div class="box timeday">Fri</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box pep111">PEP111</div>
+    <div class="box pep111">PEP111</div>
+    <div class="box ma121">MA122</div>
+    <div class="box ma121">MA122</div>
+    <div class="box cs115">CS115</div>
+    <div class="box cs115">CS115</div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    <div class="box emptytime"></div>
+    
+</div>
+<!--Table-->
+
 
 </html>
