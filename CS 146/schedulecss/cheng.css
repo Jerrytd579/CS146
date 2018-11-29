@@ -1,0 +1,63 @@
+.box {
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    border: 5px solid black;
+    padding: 5px;
+    margin: auto;
+}
+
+.timeday {
+    background-color: grey;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    width: 65x;
+}
+
+.toprow {
+    text-align: center;
+    font-size: 25px;
+    background-color: grey;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+}
+
+.emptytime {
+    background-color: white;
+}
+
+.cal103 {
+    background-color: goldenrod;
+}
+
+.cs115 {
+    background-color: deepskyblue;
+}
+
+.cs146 {
+    background-color: forestgreen;
+}
+
+.quiz {
+    background-color: orangered;
+}
+
+.ma121 {
+    background-color: crimson;
+}
+
+.pep111 {
+    background-color: mediumvioletred;
+}
