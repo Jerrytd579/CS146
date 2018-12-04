@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div id = "banner"></div>
+        <title>Our Shop!</title>
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Poiret+One|Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="package/dist/sweetalert2.css">
+
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <div id="top-head">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="logo">
+                                <h3>Group 11 Co.</h3>
+                            </td>
+                            <td id="select-category">
+                                <select>
+                                    <option>--All Categories--</option>
+                                    <option>Technology</option>
+                                    <option>Clothing</option>
+                                    <option>Accessories</option>
+                                </select> 
+                            </td>
+                            <td id="search">
+                                <input type="text" placeholder="Search Products...">
+                            </td>
+                            <td id="fav" onclick="fav()" >
+                                <i class="fas fa-heart fa-2x"></i>
+                            </td>
+                            <td id="cart" onclick="emptycart()">
+                                <i class="fas fa-cart-plus fa-2x"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <nav>
+                <table id="nav-table">
+                    <tbody>
+                        <tr>
+                            <td id="categories">
+                                Categories
+                            </td>
+                            <td id="links">
+                                <ul>
+                                    <a href="index.html" ><li id="select">Home</li></a>
+                                    <a href="#" ><li>Hot Items</li></a>
+                                    <a href="#"><li>New Items</li></a>
+                                    <a href="#"><li>Accessories</li></a>
+                                    <a href="#" ><li onclick="contact()">Contact Us</li></a>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </header>
+        <hr>
+        <section>
+            <img src="Images/clothing.jpg" id="bigimg2">
+            <img src="Images/clothing2.jpg" id="bigimg3">
+            <img src="Images/clothing3.jpg" id="bigimg5">
+        </section>
+
+
+        <hr>
+        <section >
+            <h3 class = title>Fashion Items On Sale Now!</h3>
+            <div>
+                <table class = "shop">
+                    <tbody>
+                        <tr>
+                            <td >
+                                <img src="Images/floral.jpg" class="items">
+                                <div id = "items">
+                                    <p id = "redtext">Handbag and Accessories Sale!</p>
+                                    <p id = "boldtext">Floral Zip Pouch</p>
+                                    <p id = "desc">Extra 30% off use: FRIEND. With offer $16.80 Free Gift with Purchase</p>
+                                    <a onclick="Leaving('https://www.macys.com/shop/product/floral-zip-pouch-created-for-macys?ID=7074823&CategoryID=26846&tdp=cm_app~zMCOM-NAVAPP~xcm_zone~zHP_ZONE_B~xcm_choiceId~zcidM3IMEX-5cb11e58-32dd-481a-88ec-fef4bdc4136b%40H47%40TRENDING%2BNOW%24168342%247074823~xcm_pos~zPos1~xcm_srcCatID~z26846')" id = "weblink"> <p id = "linktext">Shop Floral Zip Pouch ></p></a>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="Images/shoe.jpg" class="items">
+                                <div id = "items">
+                                    <p id = "redtext">Shoe Sale!</p>
+                                    <p id = "boldtext">MICHAEL Michael Kors</p>
+                                    <p id = "desc">Sale $52.49 (46% off) Sale ends 12/10/18! 25% Off Michael Kors</p>
+                                    <a onclick="Leaving('https://www.macys.com/shop/product/michael-michael-kors-fulton-moc-flats?ID=1240149&CategoryID=13247&tdp=cm_app~zMCOM-NAVAPP~xcm_zone~zHP_ZONE_B~xcm_choiceId~zcidM3IMEX-5cb11e58-32dd-481a-88ec-fef4bdc4136b%40H47%40TRENDING%2BNOW%24168342%241240149~xcm_pos~zPos2~xcm_srcCatID~z13247')"id = "weblink"> <p id = "linktext">Shop Michael Kors ></p></a>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="Images/ralphy.jpg" class="items">
+                                <div id = "items">
+                                    <p id = "redtext">Men's Clothing Sale</p>
+                                    <p id = "boldtext">Polo Ralph Lauren</p>
+                                    <p id = "desc">Men's Waffle-Knit Thermal. Sale $34.99 (22% off) Sale ends 1/1/19! Extra 30% off use: FRIEND</p>
+                                    <a onclick="Leaving('https://www.macys.com/shop/product/polo-ralph-lauren-mens-waffle-knit-thermal?ID=6593607&CategoryID=16295&tdp=cm_app~zMCOM-NAVAPP~xcm_zone~zHP_ZONE_B~xcm_choiceId~zcidM3IMEX-5cb11e58-32dd-481a-88ec-fef4bdc4136b%40H47%40TRENDING%2BNOW%24168342%246593607~xcm_pos~zPos3~xcm_srcCatID~z16295')"id = "weblink"> <p id = "linktext">Shop Ralph Lauren ></p></a>
+                                </div>
+                            </td>
+
+                            <td >
+                                <img src="Images/marthastew.jpg" class="items" >
+                                <div id = "items">
+                                    <p id = "redtext">Bath & Bath Sale!</p>
+                                    <p id = "boldtext">Martha Stewart Collection</p>
+                                    <p id = "desc">Quick Dry Reversible Bath Towel. Sale $8.99 (43% off) Sale ends 12/23/18! Extra 30% off use: FRIEND </p>
+                                    <a onclick="Leaving('https://www.macys.com/shop/product/martha-stewart-collection-quick-dry-reversible-bath-towel-created-for-macys?ID=2855449&CategoryID=16853&tdp=cm_app~zMCOM-NAVAPP~xcm_zone~zHP_ZONE_B~xcm_choiceId~zcidM3IMEX-5cb11e58-32dd-481a-88ec-fef4bdc4136b%40H47%40TRENDING%2BNOW%24168342%242855449~xcm_pos~zPos4~xcm_srcCatID~z16853')"id = "weblink"> <p id = "linktext">Shop Bath Towel Collections ></p></a>
+                                </div>
+                            </td>
+                            
+
+                        </tr>
+                        <tr>
+                            <td >
+                                <img src="Images/coat1.jpg" class="items" >
+                                <div id = "items">
+                                    <p id = "redtext">New Coat Deals!</p>
+                                    <p id = "boldtext">Save extra on select coats!</p>
+                                    <p id = "desc">Via Spiga Faux-Fur-Collar Asymmetrical Belted Coat. Extra 30% off use: FRIEND</p>
+                                    <a onclick="Leaving('https://www.macys.com/shop/womens-clothing/womens-coats/Price_discount_range/40_PERCENT_%20off%20%26%20more?id=269&cm_re=2018.12.04-_-HOMEPAGE_INCLUDE_1_row_07-_-CATEGORY%20--%205125%20--%20:40%20percent%20Off%20Women%C2%92s%20Coats')"  id = "weblink"> <p id = "linktext">Shop Fur Coats ></p></a>
+                                </div>
+                            </td>
+                            <td >
+                                <img src="Images/coat2.jpg" class="items">
+                                <div id = "items">
+                                    <p id = "redtext">Winter Jacket Deals!</p>
+                                    <p id = "boldtext">Save extra on select jackets!</p>
+                                    <p id = "desc">GUESS Asymmetrical Belted Wool Wrap Coat. Extra 30% off use: FRIEND</p>
+                                    <a onclick="Leaving('https://www.macys.com/shop/product/guess-asymmetrical-belted-wool-wrap-coat?ID=6410638&CategoryID=269#fn=PRICE_DISCOUNT_RANGE%3D40_PERCENT_%20off%20&amp;%20more%26SIZE%3D%26sp%3D1%26spc%3D457%26ruleId%3D78%7CBOOST%20SAVED%20SET%7CBOOST%20ATTRIBUTE%26searchPass%3DmatchNone%26slotId%3D2')" id = "weblink"> <p id = "linktext">Shop Winter Coats ></p></a>
+                                </div>
+                            </td>
+                            <td >
+                                <img src="Images/suit1.jpg" class="items" >
+                                <div id = "items">
+                                    <p id = "redtext">Mens Suit & Tux Sale!</p>
+                                    <p id = "boldtext">Save up to 40% on select Suits!</p>
+                                    <p id = "desc">Michael Kors Men's Classic-Fit Airsoft Stretch Solid Suit Separates. Extra 30% off use: FRIEND</p>
+                                    <a onclick="Leaving('https://www.macys.com/shop/product/michael-kors-mens-classic-fit-airsoft-stretch-solid-suit-separates?ID=5899699&CategoryID=17788#fn=sp%3D1%26spc%3D618%26ruleId%3D105%7CBOOST%20SAVED%20SET%7CBOOST%20ATTRIBUTE%26searchPass%3DmatchNone%26slotId%3D4')"id = "weblink"> <p id = "linktext">Shop Suits & Tux></p></a>
+                                </div>
+                            </td>
+                            <td >
+                                <img src="Images/suit2.jpg" class="items">
+                                <div id = "items">
+                                    <p id = "redtext">Mens Suit & Tux Sale!</p>
+                                    <p id = "boldtext">Save up to 40% in Men's Fashion!</p>
+                                    <p id = "desc">For sophisticated style with superior comfort, choose the refined modern fit and unrestrictive TH Flex stretch design.</p>
+                                    <a onclick="Leaving('https://www.macys.com/shop/product/tommy-hilfiger-mens-modern-fit-th-flex-stretch-suit-separates?ID=5904127&CategoryID=17788&swatchColor=Light%20Navy#fn=sp%3D1%26spc%3D618%26ruleId%3D105%7CBOOST%20SAVED%20SET%7CBOOST%20ATTRIBUTE%26searchPass%3DmatchNone%26slotId%3D5')"id = "weblink"> <p id = "linktext">Shop Suits & Tux></p></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </section>
+        <script src="package/dist/sweetalert2.js"></script>
+        <script src = "Code.js"></script>
+    </body>
+            <div id = "banner"> <marquee behavior="alternate"> <p>Happy Shopping! Enjoy the Deals while they last! :D</p> </marquee></div>
+
+</html>

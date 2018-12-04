@@ -1,6 +1,6 @@
 function disabled(){
 	swal(
-	  'Sorry!',
+	  'Stay Tuned!',
 	  'This feature isnt completely functional so come back later! :D',
 	  'info'
 	);
@@ -51,7 +51,7 @@ function fav(){
 function Leaving(link){
 	swal({
 	  title: 'Are you sure?',
-	  text: "You'll be leaving the site!",
+	  text: "You'll be leaving this sweet site to get some amazing deals on new items!",
 	  type: 'warning',
 	  showCancelButton: true,
 	  confirmButtonColor: '#3085d6',

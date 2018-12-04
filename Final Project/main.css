@@ -203,9 +203,17 @@ select {
     width: 40%;
     float:right;
     margin-top: -190px;
-    width: 40%;
     max-height: 190px;
 }
+#bigimg5{
+    padding:0;
+    display: inline;
+    width: 40%;
+    float:right;
+    margin-top: -300px;
+    max-height: 300px;
+}
+
 
 #items{
     width:50%;
@@ -234,7 +242,7 @@ select {
 }
 
 #desc{
-    font-family: Arial;
+    font-family: Arial
     font-weight: lighter;
     color:grey;
     font-size: x-small;
