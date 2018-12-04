@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div id = "banner"></div>
+        <title>Our Shop!</title>
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Poiret+One|Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="package/dist/sweetalert2.css">
+
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <div id="top-head">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="logo">
+                                <h3>Group 11 Co.</h3>
+                            </td>
+                            <td id="select-category">
+                                <select>
+                                    <option>--All Categories--</option>
+                                    <option>Technology</option>
+                                    <option>Clothing</option>
+                                    <option>Accessories</option>
+                                </select> 
+                            </td>
+                            <td id="search">
+                                <input type="text" placeholder="Search Products...">
+                            </td>
+                            <td id="fav" onclick="fav()" >
+                                <i class="fas fa-heart fa-2x"></i>
+                            </td>
+                            <td id="cart" onclick="emptycart()">
+                                <i class="fas fa-cart-plus fa-2x"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <nav>
+                <table id="nav-table">
+                    <tbody>
+                        <tr>
+                            <td id="categories">
+                                Categories
+                            </td>
+                            <td id="links">
+                                <ul>
+                                    <a href="index.html" ><li id="select">Home</li></a>
+                                    <a href="#" ><li>Hot Items</li></a>
+                                    <a href="#"><li>New Items</li></a>
+                                    <a href="#"><li>Accessories</li></a>
+                                    <a href="#" ><li onclick="contact()">Contact Us</li></a>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </header>
+        <hr>
+        <section>
+            <img src="Images/banner1.jpg" id="bigimg2">
+            <img src="Images/banner2.jpg" id="bigimg3">
+            <img src="Images/banner3.jpg" id="bigimg4">
+        </section>
+
+
+        <hr>
+        <section >
+            <h3 class = title>Our Featured Items</h3>
+            <div>
+                <table class = "shop">
+                    <tbody>
+                        <tr>
+                            <td >
+                                <img src="Images/ps4.jpg" class="items">
+                                <div id = "items">
+                                    <p id = "redtext">New Game Console Bundle</p>
+                                    <p id = "boldtext">PlayStation 4 is now available.</p>
+                                    <p id = "desc">Go back to where it all began. This retro console comes with 20 games already installed.</p>
+                                    <a onclick="Leaving('https://www.bestbuy.com/site/searchpage.jsp?st=ps4&_dyncharset=UTF-8&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys')" id = "weblink"> <p id = "linktext">Shop Playstation 4 ></p></a>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="Images/xbox1.jpg" class="items">
+                                <div id = "items">
+                                    <p id = "redtext">Microsoft Savings</p>
+                                    <p id = "boldtext">Save up to $300 on Microsoft Products.</p>
+                                    <p id = "desc">Minimum Savings is $60.</p>
+                                    <a onclick="Leaving('https://www.bestbuy.com/site/searchpage.jsp?st=xbox&_dyncharset=UTF-8&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys')"id = "weblink"> <p id = "linktext">Shop New Xbox One ></p></a>
+                                </div>
+                            </td>
+                            <td>
+                                <img src="Images/chromebook.jpg" class="items">
+                                <div id = "items">
+                                    <p id = "redtext">Chromebook Savings</p>
+                                    <p id = "boldtext">Save up to $100 on select Chromebooks.</p>
+                                    <p id = "desc">Minimum Savings is $80.</p>
+                                    <a onclick="Leaving('https://www.bestbuy.com/site/clp/laptop-savings/pcmcat1478899452624.c?id=pcmcat1478899452624')" id = "weblink"> <p id = "linktext">Shop these Chromebooks ></p></a>
+                                </div>
+                            </td>
+
+                            <td >
+                                <img src="Images/headphones.jpg" class="items" >
+                                <div id = "items">
+                                    <p id = "redtext">Beats Savings</p>
+                                    <p id = "boldtext">Save 50% on new headphones.</p>
+                                    <p id = "desc">Ends 12/5/18. Excludes special order, clearance, open-box, refurbished and pre-owned items.</p>
+                                    <a onclick="Leaving('https://www.bestbuy.com/site/searchpage.jsp?st=headphones&_dyncharset=UTF-8&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys')"id = "weblink"> <p id = "linktext">Shop Powerbeats 3 ></p></a>
+                                </div>
+                            </td>
+                            
+
+                        </tr>
+                        <tr>
+                            <td >
+                                <img src="Images/flatscreen.jpg" class="items" >
+                                <div id = "items">
+                                    <p id = "redtext">TV Deals</p>
+                                    <p id = "boldtext">Top TVs under $500.</p>
+                                    <p id = "desc">Includes big-screen TVs with all the latest features at amazing prices.</p>
+                                    <a onclick="Leaving('https://www.bestbuy.com/site/tv-home-theater/tv-sale-page/pcmcat359600050007.c?id=pcmcat359600050007')"  id = "weblink"> <p id = "linktext">Shop TVs under $500 ></p></a>
+                                </div>
+                            </td>
+                            <td >
+                                <img src="Images/camera.jpg" class="items">
+                                <div id = "items">
+                                    <p id = "redtext">Camera and Drone Deals</p>
+                                    <p id = "boldtext">Save up to $500 on cameras and drones.</p>
+                                    <p id = "desc">Plus, more great deals on cameras and accessories. Minimum savings is $50.</p>
+                                    <a onclick="Leaving('https://www.bestbuy.com/site/featured-offers/digital-imaging-offers/pcmcat37600050025.c?id=pcmcat37600050025')" id = "weblink"> <p id = "linktext">Shop camera and drone deals ></p></a>
+                                </div>
+                            </td>
+                            <td >
+                                <img src="Images/kitchen.jpg" class="items" >
+                                <div id = "items">
+                                    <p id = "redtext">Small Appliances Offer</p>
+                                    <p id = "boldtext">Save up to 40% on select small kitchen appliances.</p>
+                                    <p id = "desc">Give the gift of easy food and beverage prep. Check out deals on coffee makers, stand mixers, pressure cookers and more.</p>
+                                    <a onclick="Leaving('https://www.bestbuy.com/site/promo/small-appliance-savings?qp=currentoffers_facet%3DCurrent%20Deals~On%20Sale')"id = "weblink"> <p id = "linktext">Shop kitchen applicances ></p></a>
+                                </div>
+                            </td>
+                            <td >
+                                <img src="Images/switch.jpg" class="items">
+                                <div id = "items">
+                                    <p id = "redtext">Nintendo Holiday Sale!</p>
+                                    <p id = "boldtext">Save up to $50 on Nintendo Items! </p>
+                                    <p id = "desc">Introducing Nintendo Switch! The Nintendo Switch system also enables gamers to play the same title wherever! </p>
+                                    <a onclick="Leaving('https://www.bestbuy.com/site/searchpage.jsp?st=nintendo+switch&_dyncharset=UTF-8&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys')" id = "weblink"> <p id = "linktext">Shop Nintendo Switch ></p></a>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </section>
+        <script src="package/dist/sweetalert2.js"></script>
+        <script src = "Code.js"></script>
+    </body>
+            <div id = "banner"> <marquee behavior="alternate"> <p>Happy Shopping! Enjoy the Deals while they last! :D</p> </marquee></div>
+
+</html>

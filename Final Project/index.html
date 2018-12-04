@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div id = "banner"></div>
+        <title>Our Shop!</title>
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Poiret+One|Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="package/dist/sweetalert2.css">
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <header>
+            <div id="top-head">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="logo">
+                                <h3>Group 11 Co.</h3>
+                            </td>
+                            <td id="select-category">
+                                <select>
+                                    <option>--All Categories--</option>
+                                    <option>Technology</option>
+                                    <option>Clothing</option>
+                                    <option>Accessories</option>
+                                </select> 
+                            </td>
+                            <td id="search">
+                                <input type="text" placeholder="Search Products...">
+                            </td>
+                            <td id="fav" >
+                                <i style = "color: #b91227" class="fas fa-heart fa-2x" onclick="fav()"></i>
+                            </td>
+                            <td style = "color: #b91227" id="cart" onclick="emptycart()">
+                                <i class="fas fa-cart-plus fa-2x"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <nav>
+                <table id="nav-table">
+                    <tbody>
+                        <tr>
+                            <td id="categories">
+                                Categories
+                            </td>
+                            <td id="links">
+                                <ul>
+                                    <a href="#" ><li id="select">Home</li></a>
+                                    <a href="hotitems.html"><li>Hot Items</li></a>
+                                    <a href="#"><li>New Items</li></a>
+                                    <a href="#"><li>Accessories</li></a>
+                                    <a href="#"><li onclick="contact()">Contact Us</li></a>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </nav>
+        </header>
+        <hr>
+        <section id="body">
+            <div id="left-body">
+                <ul>
+                    <a href="#"><li onclick="disabled()"><i class="fas fa-laptop fa-2x"></i> Electronics</li></a>
+                    <a href="#"><li onclick="disabled()"><i class="fas fa-tshirt fa-2x"></i>Fashion and Beauty</li></a>
+                    <a href="#"><li onclick="disabled()"><i class="fas fa-camera fa-2x"></i>Camera & Photo</li></a>
+                    <a href="#"><li onclick="disabled()"><i class="fas fa-mobile fa-2x"></i>Smart Phones</li></a>
+                    <a href="#"><li onclick="disabled()"><i class="fas fa-plus fa-2x"></i>More Categories</li></a>
+                </ul>
+            </div>
+            <div id="mid-body">
+                <figure> 
+                    <img src="Images/gif.gif" id="bigimg">
+                    <img src="Images/gif2.gif" id="bigimg">
+                    <img src="Images/gif3.gif" id="bigimg">
+                    <img src="Images/gif4.gif" id="bigimg">
+                    <img src="Images/gif5.gif" id="bigimg">
+                    <img src="Images/gif6.gif" id="bigimg">
+
+                </figure>
+                
+            </div>
+            
+            <div id="right-body">
+                <ul>
+                    <li id="side-title"><b><span id="blue">Featured Products</span> </b></li>
+                    <li class="right-nav">
+                        <div>
+                            <div class="side-img">
+                                <img src="Images/watch1.png">
+                            </div>
+                            <div class="side-text">
+                                Watch #1<br>$100
+                            </div>
+                        </div>
+                    </li>
+                    <li class="right-nav">
+                        <div>
+                            <div class="side-img">
+                                <img src="Images/watch2.jpg">
+                            </div>
+                            <div class="side-text">
+                                Watch #2<br>$100
+                            </div>
+                        </div>
+                    </li>
+                    <li class="right-nav">
+                        <div>
+                            <div class="side-img">
+                                <img src="Images/watch3.jpg">
+                            </div>
+                            <div class="side-text">
+                                Watch #3<br>$100
+                            </div>
+                        </div>
+                    </li>
+                    <li id="diff" class="right-nav">
+                        <div>
+                            <div class="side-img">
+                                <img src="Images/watch4.jpg">
+                            </div>
+                            <div class="side-text">  <div>
+                                Watch #4<br>$100
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <script src="package/dist/sweetalert2.js"></script>
+        <script src = "Code.js"></script>
+            
+    </body>
+
+</html>
